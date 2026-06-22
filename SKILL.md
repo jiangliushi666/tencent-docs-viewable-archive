@@ -1,11 +1,11 @@
 ---
 name: tencent-docs-viewable-archive
-description: Archive Tencent Docs URLs that the current user can already open and view when the normal download/export button is unavailable or disabled. Use for authorized local preservation of docs.qq.com online documents, including mind maps, and for quickly diagnosing other Tencent Docs types without re-discovering page metadata or internal IDs. Do not use to access documents the user cannot view, bypass account authentication, or defeat Tencent Docs access control.
+description: Archive Tencent Docs URLs that the current user can already open and view through normal authorization, for local backup and preservation. Use for authorized preservation of docs.qq.com online documents, including mind maps, and for quickly diagnosing other Tencent Docs types without re-discovering page metadata or internal IDs. Do not use to access documents the user cannot view, bypass authentication, defeat Tencent Docs access control, reverse engineer clients, or evade platform security policy.
 ---
 
 # Tencent Docs Viewable Archive
 
-Use this skill when the user has a Tencent Docs link that opens in the browser, but Tencent's UI does not offer a usable download/export action. Keep the boundary explicit: archive only content the user is authorized to view.
+Use this skill when the user has a Tencent Docs link that opens in the browser through normal authorization and needs a local backup/archive. Keep the boundary explicit: archive only content the user is authorized to view.
 
 ## Quick Start
 
@@ -45,7 +45,7 @@ For the known `mind` path, the script decodes `window.basicClientVars`, builds t
 2. Run `archive_tencent_doc.py URL`.
 3. If it exports files, report the output folder and formats.
 4. If it exits with an unsupported kind diagnostic, inspect the diagnostic JSON and page HTML before adding a new exporter.
-5. Do not attempt password guessing, token theft, private API abuse, or account/ACL bypass.
+5. Do not attempt password guessing, token theft, client reverse engineering, private API abuse, account bypass, access-control bypass, or platform-policy evasion.
 
 ## Notes
 
