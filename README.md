@@ -12,6 +12,24 @@
 
 ## 使用
 
+Codex：
+
+```powershell
+git clone https://github.com/jiangliushi666/tencent-docs-viewable-archive "$env:USERPROFILE\.codex\skills\tencent-docs-viewable-archive"
+```
+
+对 Codex 说：`用 tencent-docs-viewable-archive 保存这个腾讯文档：<URL>`
+
+Claude Code：
+
+```powershell
+git clone https://github.com/jiangliushi666/tencent-docs-viewable-archive .claude/skills/tencent-docs-viewable-archive
+```
+
+对 Claude Code 说：`Read .claude/skills/tencent-docs-viewable-archive/SKILL.md, then archive this Tencent Docs URL: <URL>`
+
+直接运行脚本：
+
 ```powershell
 python "$env:USERPROFILE\.codex\skills\tencent-docs-viewable-archive\scripts\archive_tencent_doc.py" "https://docs.qq.com/..."
 ```
