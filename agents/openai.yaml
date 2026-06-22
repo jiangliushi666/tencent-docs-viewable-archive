@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tencent Docs Viewable Archive"
+  short_description: "Archive viewable Tencent Docs locally"
+  default_prompt: "Use $tencent-docs-viewable-archive to save this viewable Tencent Docs URL locally when the download button is unavailable."
