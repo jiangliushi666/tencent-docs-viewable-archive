@@ -12,27 +12,17 @@
 
 ## 使用
 
-Codex：
+把这个 GitHub 仓库链接和腾讯文档链接一起发给 agent 即可：
 
-```powershell
-git clone https://github.com/jiangliushi666/tencent-docs-viewable-archive "$env:USERPROFILE\.codex\skills\tencent-docs-viewable-archive"
-```
+`https://github.com/jiangliushi666/tencent-docs-viewable-archive`
 
-对 Codex 说：`用 tencent-docs-viewable-archive 保存这个腾讯文档：<URL>`
+Codex 示例：
 
-Claude Code：
+`使用这个 skill 仓库保存腾讯文档：https://github.com/jiangliushi666/tencent-docs-viewable-archive 文档链接：<URL>`
 
-```powershell
-git clone https://github.com/jiangliushi666/tencent-docs-viewable-archive .claude/skills/tencent-docs-viewable-archive
-```
+Claude Code 示例：
 
-对 Claude Code 说：`Read .claude/skills/tencent-docs-viewable-archive/SKILL.md, then archive this Tencent Docs URL: <URL>`
-
-直接运行脚本：
-
-```powershell
-python "$env:USERPROFILE\.codex\skills\tencent-docs-viewable-archive\scripts\archive_tencent_doc.py" "https://docs.qq.com/..."
-```
+`Use this skill repo to archive the Tencent Docs URL: https://github.com/jiangliushi666/tencent-docs-viewable-archive URL: <URL>`
 
 ## 边界
 
